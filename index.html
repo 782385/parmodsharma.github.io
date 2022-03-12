@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Website</title>
+     <!-- -----css-link---- -->
+     <link rel="stylesheet" href="index.css">
+     <!-- ----JS-link---- -->
+     <script src="index.js"></script>
+     <!-- ----font awesome---- -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- ----Header-Section---- -->
+        <div class="header" id="headerid">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navid">
+                <div class="container p-2">
+                    <a class="navbar-brand" href="#"><span class="fa fa-laptop"></span>Pramod</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      Blog
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                      <li><a class="dropdown-item" href="#">Blog posts</a></li>
+                                      <li><a class="dropdown-item" href="#">Blog single</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                               <img src="images/moon.png" alt="" id="icon">
+                            </li>
+                        </ul>
+                    </div>
+                </nav>       
+        </div>
+        <section class="header-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 header-section-content">
+                        <h4>HELLO</h4>
+                        <h3>I'm <span>Pramod Sharma</span></h3>
+                         <h2> a <span>Web developer</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, excepturi. Distinctio accusantium fugit odit? Fugit ipsam. Sed ac fringilla ex. Nam mauris velit, ac cursus quis, non leo.</p>
+                       <div class="button">
+                        <a href="contact.html" class="hire-btn">Hire Me</a>
+                        <a href="portfolio.html" class="portfolio-btn" >Portfolio</a>
+                       </div>
+                    </div>
+                    <div class="col-lg-6 header-section-img">
+                        <img src="images/photo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+
+        <!-- ----About-Section---- -->
+        <section class="about" id="aboutid">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 about-img">
+                        <img src="images/pramod.jpg" alt="">
+                    </div>
+                    <div class="col-lg-8 about-content">
+                        <h3>WHO AM I?</h3>
+                        <h2>I'm Pramod Sharma a Web Developer</h2>
+                        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat consequatur voluptatem nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsum non velit reprehenderit, molestias culpa!</p>
+                        <button type="button">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <!-- ----Resume-Section----   -->
+
+     <section class="resume" id="resumeid">
+         <div class="resume-content">
+            <h4>MY RESUME</h4>
+            <h3>I Would Love to make your ideas real</h3>
+            <p>I love graphic design and photography and have been working on my portfolio since 2016. You can download my resume in order to learn the details of my professional life as a designer and photographer. Contact me and we will discuss your projects!</p>
+            <button type="button">Download Resume</button>
+         </div>
+     </section>
+
+  <!-- ----Services-Section----    -->
+
+  <section class="services" id="servicesid">
+      <div class="services-heading text-center">
+            <h4>SERVICES</h4>
+            <h3>What I do for you </h3>
+      </div>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active carousel-btn"
+            aria-current="true" aria-label="Slide 1"></span></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class="carousel-btn"></span></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class=" container-fluid">
+                <div class="middle-section grid-column  mt-5 pt-3">
+                  <div class="three-grids-columns card">
+                    <div class="card-top">
+                        <div class="card-font">
+                            <i class="fa fa-pencil-square"></i>
+                        </div>
+                        <div class="card-rate">
+                            <h5 style="font-size: 3rem; color: #707070; opacity: 0.4;">01</h5>
+                        </div>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepw autem, dolor set.</p>
+                    <a href="#">Read More</a>
+                  </div>
+                  <div class="three-grids-columns card">
+                    <div class="card-top">
+                        <div class="card-font">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <div class="card-rate">
+                            <h5 style="font-size: 3rem; color: #707070; opacity: 0.4;">02</h5>
+                        </div>
+                    </div>
+                    
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepw autem, dolor set.</p>
+                    <a href="#">Read More</a>
+                  </div>
+                  <div class="three-grids-columns card">
+                    <div class="card-top">
+                        <div class="card-font">
+                            <i class="fa fa-area-chart"></i>
+                        </div>
+                        <div class="card-rate">
+                            <h5 style="font-size: 3rem; color: #707070; opacity: 0.4;">03</h5>
+                        </div>
+                    </div>
+                    
+                    <h3>Research & Analysis</h3>
+                    <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepw autem, dolor set.</p>
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class=" container-fluid">
+                <div class="middle-section grid-column  mt-5 pt-3">
+                  <div class="three-grids-columns card">
+                    <div class="card-top">
+                        <div class="card-font">
+                            <i class="fa fa-pencil-square"></i>
+                        </div>
+                        <div class="card-rate">
+                            <h5 style="font-size: 3rem; color: #707070; opacity: 0.4;">04</h5>
+                        </div>
+                    </div>
+                    
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepw autem, dolor set.</p>
+                    <a href="#">Read More</a>
+                  </div>
+                  <div class="three-grids-columns card">
+                    <div class="card-top">
+                        <div class="card-font">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <div class="card-rate">
+                            <h5 style="font-size: 3rem; color: #707070; opacity: 0.4;">05</h5>
+                        </div>
+                    </div>
+             
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepw autem, dolor set.</p>
+                    <a href="#">Read More</a>
+                  </div>
+                  <div class="three-grids-columns card">
+                    <div class="card-top">
+                        <div class="card-font">
+                            <i class="fa fa-area-chart"></i>
+                        </div>
+                        <div class="card-rate">
+                            <h5 style="font-size: 3rem; color: #707070; opacity: 0.4;">06</h5>
+                        </div>
+                    </div>
+                   
+                    <h3>Research & Analysis</h3>
+                    <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepw autem, dolor set.</p>
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+        <h6 class="text-center">View All Services</h6>
+  </section>
+
+
+
+  <!-- ----Counter-Section----- -->
+
+  <section class="counter" id="counterid">
+        <div class="container">
+            <div class="row project text-center">
+                <div class="col-lg-3">
+                    <span class="fa fa-laptop"></span>
+                    <h2>700</h2>
+                    <p>Completed Projects</p>
+                </div>
+                <div class="col-lg-3">
+                    <span class="fa fa-hourglass-end"></span>
+                    <h2>120</h2>
+                    <p>In Processes</p>
+                </div>
+                <div class="col-lg-3">
+                    <span class="fa fa-gift"></span>
+                    <h2>12</h2>
+                    <p>Awards Received</p>
+                </div>
+                <div class="col-lg-3">
+                    <span class="fa fa-smile"></span>
+                    <h2>1050</h2>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <!-- ----testimonials-section---- -->
+
+
+  <section class="testimonials" id="testimonialsid">
+        <div class="testimonials-heading text-center">
+            <h3>TESTIMONIALS</h3>
+            <h2>What my clients think about me</h2>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active carousel-btn" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="carousel-btn"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="carousel-btn"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class=" container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="two-grids-columns card" >
+                                <p><span>"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium volupate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora, Dolores molestias adipisci dolor sit amet!."</p>
+                                <div class="testimonials-content">
+                                    <div class="content-img">
+                                        <img src="images/pramod.jpg" alt="">
+                                    </div>
+                                    <div class="content-name">
+                                        <h2>Pramod</h2>
+                                        <h6>Seattle, Washington</h6>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="two-grids-columns card">
+                                <p><span>"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium volupate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora, Dolores molestias adipisci dolor sit amet!."</p>
+                                <div class="testimonials-content">
+                                    <div class="content-img">
+                                        <img src="images/pramod.jpg" alt="">
+                                    </div>
+                                    <div class="content-name">
+                                        <h2>Pramod</h2>
+                                        <h6>Seattle, Washington</h6>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class=" container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="two-grids-columns card">
+                                <p><span>"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium volupate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora, Dolores molestias adipisci dolor sit amet!."</p>
+                                <div class="testimonials-content">
+                                    <div class="content-img">
+                                        <img src="images/pramod.jpg" alt="">
+                                    </div>
+                                    <div class="content-name">
+                                        <h2>Pramod</h2>
+                                        <h6>Seattle, Washington</h6>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="two-grids-columns card">
+                                <p><span>"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium volupate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora, Dolores molestias adipisci dolor sit amet!."</p>
+                                <div class="testimonials-content">
+                                    <div class="content-img">
+                                        <img src="images/pramod.jpg" alt="">
+                                    </div>
+                                    <div class="content-name">
+                                        <h2>Pramod</h2>
+                                        <h6>Seattle, Washington</h6>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class=" container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="two-grids-columns card">
+                                <p><span>"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium volupate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora, Dolores molestias adipisci dolor sit amet!."</p>
+                                <div class="testimonials-content">
+                                    <div class="content-img">
+                                        <img src="images/pramod.jpg" alt="">
+                                    </div>
+                                    <div class="content-name">
+                                        <h2>Pramod</h2>
+                                        <h6>Seattle, Washington</h6>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="two-grids-columns card">
+                                <p><span>"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium volupate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora, Dolores molestias adipisci dolor sit amet!."</p>
+                                <div class="testimonials-content">
+                                    <div class="content-img">
+                                        <img src="images/pramod.jpg" alt="">
+                                    </div>
+                                    <div class="content-name">
+                                        <h2>Pramod</h2>
+                                        <h6>Seattle, Washington</h6>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+  </section>
+
+  <!-- ----Video-Section---- -->
+
+  <section class="video" id="videoid">
+        <div class="video-heading text-center container">
+            <h2>I can give your business a new creative star right awat! Hire me for your Awesome project</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, corrupti odit? At iure facere, porro repellat officia quas, dolores magnam assumenda soluta odit harum voluptate inventore ipsa maiores fugiat accusamus eos nulla. Iure voluptatibus explicabo officia.
+            </p>
+          <img src="images/bg.jpg" alt="">
+        </div>
+  </section>
+
+
+ <!-- ----Footer-Section----  -->
+
+ <section class="footer" id="footerid">
+    <div class="footer-heading text-center container">
+        <h3>GET IN TOUCH</h3>
+        <h2>Let's start a Project! Hire me.</h2>
+        <button>Hire Me</button>
+        <button class="get-btn">Get In Touch</button>
+    </div>
+    <hr>
+    <div class="copyright container">
+        <div class="copyright-content">
+            <p>Pramod © Copyright 2020. Design by <span>Pramod Sharma</span></p>
+        </div>
+        <div class="copyright-icon">
+           <span class="fa fa-facebook-official"></span> 
+            <span class="fa fa-linkedin-square"></span>
+            <span class="fa fa-instagram"></span>
+            <span class="fa fa-twitter"></span>
+        </div>
+    </div>
+ </section>
+       
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    let icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "images/sun.png";
+    }else{
+        icon.src = "images/moon.png";
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>

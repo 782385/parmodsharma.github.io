@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    --bg-color:#936BE80D;
+    --pra-color:#696969;
+    --btn-color:#8E43E7;
+    --about-color:none;
+    --body-color:#fff;
+    --link-color:#3F3A64;
+    --nav-color:#fff;
+    --heading-color:#8C89A2;
+}
+.dark-theme{
+    --nav-color:#000;
+    --link-color:#fff;
+    --body-color:#131617;
+    --pra-color:#fff;
+    --bg-color:#131617;
+    --about-color:#000;
+}
+.header{
+    width: 100%;
+    height: auto;
+}
+.navbar-brand span{
+    font-size: 30px;
+    margin: 4px 6px;
+}
+nav{
+    background-color: var(--nav-color);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    margin: auto;
+}
+nav .navbar-toggler{
+    background-color: var(--btn-color); 
+}
+nav .dropdown-menu{
+    padding: 2rem;
+    border-radius: 10px;
+}
+.navbar-brand{
+    color: var(--btn-color) !important;
+    font-size: 2.5rem !important;
+    margin: 0px 20px;
+    font-weight: 600 !important;
+}
+nav ul li a{
+    color:var(--link-color) !important;
+    font-size: 1.4rem;
+    padding: 6px 10px !important;
+    font-weight: 600;
+    position: relative;
+}
+  nav ul li a::before{
+    content: '';
+    position: absolute;
+    background-color: #ff3c78;
+     height: 3px;
+     width:0;
+     left: 4px;
+     bottom: -10px;
+     transition: 0.3s;
+ }
+.nav-item .dropdown-toggle{
+    margin: 0px 0px 8px 0px;
+}
+.nav-item .active{
+    color: var(--btn-color) !important;
+}
+
+nav ul li a:hover::before{
+    width: 90%;
+}
+.collapse #icon{
+    position: relative;
+    top: 8px;
+    left: 6px;
+    width: 1.7rem;
+    cursor: pointer;
+}
+.service-heading{
+    background-color:var(--bg-color);
+    text-align: center;
+    padding: 10rem 0rem 4rem 0rem;
+}
+.service-heading h1{
+    font-size: 4rem;
+    color: var(--link-color);
+}
+.service-heading a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--pra-color);
+}
+.service-heading .active{
+    color: var(--btn-color);
+}
+.service-heading span{
+    color: var(--pra-color);
+    padding: 0rem 1rem;
+}
+.contact{
+    background-color: var(--nav-color);
+}
+.contact .address{
+    padding: 4rem 4rem 2rem 2rem;
+}
+.contact .call{
+    display: flex;
+}
+.contact .call span{
+    font-size: 1rem;
+    color: var(--btn-color);
+    margin: 10px 20px;
+}
+.contact .call h4{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.contact .call p{
+    font-size: 1.4rem;
+    color: var(--pra-color);
+}
+.contact-form{
+padding: 4rem 4rem 2rem 2rem;
+}
+.contact-form form input{
+    border: none;
+    background-color: var(--bg-color);
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    border-radius: 10px;
+    width: 100%;
+}
+.contact-form form .message{
+    border: 1px solid transparent;
+    background-color: var(--bg-color);
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin: 1rem 2rem 0rem 0rem;
+    border-radius: 10px;
+}
+.contact-form form .subject{
+    width: 100%;
+    margin:1rem 2rem 0rem 0rem;
+}
+
+
+@media(max-width: 868px){
+    html{
+      font-size: 75%;
+    }
+    nav ul li a:hover::before{
+        width: 0;
+    }
+}
